@@ -1,4 +1,4 @@
-﻿/*
+/*
    New Perspectives on HTML and CSS
    Tutorial 3
    Case Problem 2
@@ -10,39 +10,81 @@
    Filename:         mw_layout.css
    Supporting Files: none
 */
-body{
-  font-family: Tahoma, Geneva, sans-serif;
+
+body {
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
-#articleheader{
-  font-size: 18px;
-  font-weight: normal;
-  letter-spacing: 7px;
-  text-align: center;
+#articleheader {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 7px;
+    text-align: center;
 }
-nav ul{
-  background-color: rgb(125, 120, 89);
-  line-height: 3em;
-  list-style: none;
+
+nav ul {
+    background-color: rgb(125, 120, 89);
+    line-height: 3em;
+    list-style: none;
 }
-nav a{
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
+
+nav a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     background-color: rgb(131, 121, 36);
     list-style-image: url("wheelmarker.png");
-
-}
-nav ul li a:hover{
-  color: rgb(255, 255, 255);
 }
 
-#leftsection p{
-  font-size: 22px
-
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
 }
 
-#firstpar::first-line {
-  text-transform: uppercase;
+#leftsectionv > p {
+    font-size: 22px;
+}
+
+#leftsection #firstpar::first-line {
+    text-transform: uppercase;
+}
+
+blockquote {
+    background-color: rgb(131, 121, 36);
+    color: white;
+    font-size: 16px;
+    font-family: Comic Sans MS, Times, cursive;
+}
+
+blockquote p::before {
+  content: open-quote;
+}
+blockquote p::after{
+  content: close-quote;
+}
+
+#rightsection h1 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: normal;
+    text-align: center;
+}
+
+#rightsection h2 {
+    font-size: 18px;
+    text-align: right;
+    font-weight: normal;
+}
+
+#rightsection p {
+    color: gray;
+    font-size: 14px;
+    text-align: justify;
+}
+
+footer address {
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
 }
